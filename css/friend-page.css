@@ -1,0 +1,66 @@
+#friend-page {
+    text-align: left;
+    width: 70%;
+    margin: 0 15%;
+    padding:40px;
+    background-color: #fff;
+    z-index: 1;
+    overflow-y:auto;
+	position: fixed;
+	bottom:0px;
+	top: 50px;
+	right: 0px;
+	left: 0px;
+}
+
+#friend-page .grid-item {
+	display:inline-block;
+	width: 184px;
+	height: 184px;
+	max-width:19vw;
+	max-height:19vw;
+	margin:10px;
+	background-size:cover;
+	background-position:center center;
+}
+
+#friend-page .grid-item.selected {
+	opacity:0.5;
+}
+
+#friend-page .friend-cover {
+	height:315px;
+}
+
+#friend-page .friend-picture {
+    border: 4px solid #fff;
+    top: 6px;
+    left: 15px;
+    width: 68px;
+    height: 68px;  
+    max-height: 13vw;
+    max-width: 13vw;
+}
+
+#friend-page .friend-name {
+	padding-left:90px;
+}
+
+
+@media only screen and (max-width:600px) {
+	.container {
+		width:100%;
+	}
+	#friend-page {
+		margin:0px;
+		padding:20px;
+		width:100%;
+	}
+	#friend-page .grid-item {
+		margin:1.3vw;
+	}
+
+	#friend-page h5 {
+		display:none;
+	}
+}
